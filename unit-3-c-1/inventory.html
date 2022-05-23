@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #all_products {
+        display: grid;
+        grid-template-columns:  repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+      }
+      #navbar {
+        border: none;
+        height: 50px;
+        background-color: teal;
+        border-radius: 5px;
+      }
+      #add_more_product{
+        margin-top: 12px;
+        width: 130px;
+        height: 30px;
+        background-color: aliceblue;
+        color: black;
+        border: none;
+        cursor: pointer;
+        border-radius: 40px;
+      }
+      #add_more_product:hover {
+        background-color: rgb(67, 207, 12);
+        color: white;
+      }
+      #box {
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        margin-top: 30px;
+        
+      }
+      img {
+        width: 100%;
+      }
+      P{
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+      }
+      #remove_product {
+        width: 130px;
+        height: 30px;
+        background-color: teal;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-left: 110px;
+        margin-bottom: 10px;
+      
+      }
+      #remove_product:hover {
+        background-color: rgb(67, 207, 12);
+        color: white;
+      }
+    </style>
+  </head>
+
+  <style></style>
+
+  <body>
+    <div id="navbar">
+      <!--Create Add More Product button here, give id as "add_more_product". avoid making spelling mistakes in HTML id's-->
+      <button onclick="addMore()" id="add_more_product">Add More Product</button>
+    </div>
+    <div id="all_products">
+      <!--append all products data here in grid format-->
+      <!-- The Remove Product button will have id as "remove_product" -->
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/inventory.js"></script>
